@@ -4,40 +4,49 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./index.css" />
     <title>Home</title>
   </head>
   <body>
     <header>
-      <div>
-        <img src="./media/Logo Mighty ducks-01.png" alt="logo" height="300" />
+      <div class="contenedor">
+        <h1 id="tituloPrincipal">Mighty Ducks Hockey League</h1>
 
-        <h1>Mighty Ducks Hockey League</h1>
+        <img
+          class="imagenPrincipal"
+          src="./assets/design1_image1.jpg"
+          alt="imagen"
+        />
+
+        <h3 class="tituloSecundario">Upcoming Events</h3>
+
+        <img id="logo" src="./assets/LogoMightyducks-01.png" alt="logo" />
       </div>
-
-      <nav>
-        <a href="./index.html">Home |</a>
-        <a href="./about.html">About MDHL |</a>
-        <a href="./contact.html">Contact</a>
-      </nav>
     </header>
 
     <main>
-      <div>
-        <img src="./media/hockey  1.jpg" alt="imagen-uno" height="300" />
+      <div class="contenedorBody">
+        <img class="imagen" src="./assets/hockey1.jpg" alt="imagen-uno" />
+
+        <nav class="contenedorNav">
+          <a class="active" href="./index.html">Home</a>
+          <a href="./about.html">About</a>
+          <a href="./contact.html">Contact</a>
+        </nav>
+
+        <aside class="contenedorTexto">
+          <h3>Upcoming Events</h3>
+
+          <h4>August 4</h4>
+          <p>MDSL Fundraiser</p>
+
+          <h4>August 16</h4>
+          <p>Season Kick-off: Meet the Teams</p>
+
+          <h4>September 1</h4>
+          <p>First Game of the Season (Check Game Schedule for details)</p>
+        </aside>
       </div>
-
-      <aside>
-        <h3>Upcoming Events</h3>
-
-        <h4>August 4</h4>
-        <p>MDSL Fundraiser</p>
-
-        <h4>August 16</h4>
-        <p>Season Kick-off: Meet the Teams</p>
-
-        <h4>September 1</h4>
-        <p>First Game of the Season (Check Game Schedule for details)</p>
-      </aside>
     </main>
 
     <footer></footer>
