@@ -91,16 +91,17 @@ a:hover {
 }
 .contenedorNavRules nav {
   background-color: black;
-  height: 150vh;
+  height: 120vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 15%;
+  width: 11%;
 }
 .contenedorNavRules > nav a {
   color: white;
   font-family: Arial, Helvetica, sans-serif;
-  margin: 10px;
+  font-size: 15px;
+  margin-right: 5px;
 }
 .contenedorNavRules > nav .active {
   color: #5fa199;
@@ -124,7 +125,11 @@ a:hover {
 }
 .parrafoRules {
   margin-top: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
+}
+p,
+li {
+  font-size: 15px;
 }
 .listRules {
   margin-left: 30px;
@@ -147,13 +152,16 @@ a:hover {
   display: flex;
   justify-content: space-around;
   flex-direction: column;
-  padding-left: 5px;
   width: 10%;
 }
 .contenedorNavRulesGames > a {
   color: white;
   font-family: Arial, Helvetica, sans-serif;
-  margin: 10px;
+  font-size: 15px;
+  margin: 5px;
+}
+.contenedorNavRulesGames > .active {
+  color: #5fa199;
 }
 .sectionRules {
   display: flex;
@@ -161,7 +169,7 @@ a:hover {
   padding: 20px;
   font-size: 20px;
 }
-.h1Rules{
+.h1Rules {
   text-align: center;
   margin-bottom: 50px;
   font-size: 40px;
@@ -170,21 +178,388 @@ a:hover {
   text-decoration: underline;
   font-style: italic;
   font-size: 20px;
-  margin-bottom: 50px
-}
-table{
   margin-bottom: 50px;
 }
-.infoRules{
+table {
+  margin-bottom: 50px;
+}
+.infoRules {
   margin-bottom: 15px;
 }
 .parrafoContact {
   display: flex;
-  flex-direction: row; 
+  flex-direction: row;
   justify-content: space-between;
   margin-right: 100px;
 }
-.tituloRules{
+.tituloRules {
   margin-bottom: 20px;
   text-align: center;
+}
+form {
+  margin: 25px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.sectionFormPrimera {
+  font-size: 20px;
+}
+.inputText {
+  background-color: #f3f3f3;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 2px solid black;
+  outline: none;
+}
+#name,
+#lastName {
+  width: 38%;
+}
+#address {
+  width: 88%;
+}
+#city,
+#code,
+#signature,
+#date {
+  width: 44%;
+}
+.contenedorChek {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 15px;
+}
+.gender {
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-left: 20px;
+  display: flex;
+  flex-direction: row;
+}
+.grade {
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.parrafoForm {
+  font-size: 20px;
+  margin-bottom: 16px;
+}
+.school {
+  display: flex;
+  flex-direction: row;
+  margin: 15px;
+}
+.school > input {
+  margin-right: 15px;
+}
+th,
+td {
+  padding-top: 10px;
+  padding-bottom: 20px;
+  padding-left: 30px;
+  padding-right: 40px;
+}
+.possitionUno,
+possitionDos {
+  display: flex;
+  flex-direction: row;
+  margin: 15px;
+}
+.tituloForm {
+  margin: 20px;
+}
+.size {
+  margin: 15px;
+}
+#marjo,
+#defense {
+  margin-left: 50px;
+}
+#goalk,
+#m {
+  margin-left: 55px;
+}
+#ex {
+  margin-left: 50px;
+}
+#l {
+  margin-left: 30px;
+}
+#north {
+  margin-left: 103px;
+}
+#south {
+  margin-left: 37px;
+}
+#preSchool,
+#uno,
+#dos,
+#tres,
+#cuatro,
+#cinco {
+  margin-right: 10px;
+  margin-left: 15px;
+}
+button {
+  border: 0;
+  background-color: #5fa199;
+  border-radius: 5px;
+}
+@media (max-width: 424px) {
+  .contenedor {
+    height: 215px;
+  }
+  #tituloPrincipal {
+    font-size: 20px;
+    padding: 8px 5px;
+  }
+  .tituloSecundario {
+    padding: 5px 0;
+    bottom: 0;
+    font-size: 12px;
+  }
+  .imagen {
+    height: 100px;
+    margin: 5px;
+  }
+  #logo {
+    bottom: 42px;
+    left: 80%;
+    width: 50px;
+  }
+  .contenedorNav {
+    margin-left: 2px;
+    width: 15%;
+    font-size: 8px;
+  }
+  .contenedorTexto {
+    font-size: 8px;
+    margin-left: 14px;
+    margin-right: 4px;
+  }
+  p,
+  li {
+    font-size: 8px;
+  }
+  .contenedorBody {
+    margin-top: 15px;
+  }
+  .contenedorNavRules > nav a {
+    font-size: 8px;
+    margin-right: 2px;
+  }
+  .contenedorNavRules nav {
+    width: 14%;
+    height: 81vh;
+  }
+  .titleRules {
+    margin-bottom: 5px;
+    font-size: 12px;
+  }
+  .subtitleRules {
+    margin-top: 5px;
+    font-size: 12px;
+  }
+  .parrafoRules {
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+  .sectionRules {
+    padding: 5px;
+    margin: 0;
+  }
+  .contenedorNavRulesGames > a {
+    font-size: 8px;
+    margin: 2px;
+  }
+  .contenedorNavRulesGames {
+    width: 15%;
+  }
+  #pDecoration {
+    font-size: 10px;
+    margin-bottom: 20px;
+  }
+  th,
+  td {
+    padding: 2px;
+    font-size: 10px;
+  }
+  iframe,
+  .iframe {
+    display: none;
+  }
+
+  table {
+    margin-bottom: 10px;
+  }
+  form {
+    margin: 5px;
+  }
+  .sectionFormPrimera {
+    font-size: 12px;
+  }
+  .gender {
+    font-size: 12px;
+    margin-left: 5px;
+  }
+  #name,
+  #lastName,
+  #address,
+  #city,
+  #code {
+    width: 50%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+  }
+  .contenedorChek {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .grade {
+    font-size: 12px;
+  }
+  .tituloForm {
+    margin: 0;
+    font-size: 13px;
+  }
+  .parrafoForm {
+    font-size: 12px;
+    margin-bottom: 5px;
+  }
+  #marjo,
+  #defense {
+    margin-left: 15px;
+  }
+  #north {
+    margin-left: 47px;
+  }
+  #south {
+    margin-left: 20px;
+  }
+  #goalk,
+  #m {
+    margin-left: 17px;
+  }
+  #l {
+    margin-left: 2px;
+  }
+  #ex {
+    margin-left: 15px;
+  }
+  .tituloPermission {
+    font-size: 15px;
+  }
+  .signature {
+    font-size: 10px;
+  }
+  button {
+    font-size: 10px;
+    padding: 2px;
+  }
+}
+@media (min-width: 425px) and (max-width: 767px) {
+  #tituloPrincipal {
+    font-size: 25px;
+  }
+  .tituloSecundario {
+    font-size: 14px;
+  }
+  .contenedor {
+    height: 290px;
+  }
+  .contenedorNavRulesGames {
+    width: 12%;
+  }
+  form {
+    margin: 5px;
+  }
+  .sectionFormPrimera {
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+  }
+  #logo {
+    left: 75%;
+    width: 90px;
+  }
+  .contenedorChek {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 10px;
+  }
+  .contenedorChek {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    font-size: 15px;
+  }
+  .gender {
+    font-size: 15px;
+  }
+  .grade {
+    font-size: 15px;
+  }
+  .tituloForm {
+    margin: 5px;
+    font-size: 20px;
+  }
+  .parrafoForm {
+    font-size: 15px;
+    margin-bottom: 10px;
+  }
+  .school {
+    margin: 10px;
+  }
+  #north {
+    margin-left: 87px;
+  }
+  #marjo,
+  #defense {
+    margin-left: 49px;
+  }
+  #goalk,
+  #m {
+    margin-left: 53px;
+  }
+  #ex {
+    margin-left: 45px;
+  }
+  .tituloPermission {
+    font-size: 20px;
+  }
+  p,
+  li {
+    font-size: 10px;
+  }
+  .signature {
+    font-size: 15px;
+  }
+  .contenedorNavRulesGames > a {
+    font-size: 10px;
+    margin: 0px;
+  }
+  .contenedorNavRules > nav a {
+    font-size: 9px;
+    margin-right: 5px;
+  }
+  .subtitleRules {
+    margin-top: 15px;
+    font-size: 20px;
+  }
+  .sectionRules {
+    padding: 15px;
+  }
+  .imagen {
+    margin-left: 5px;
+    height: 120px;
+  }
+  .contenedorNav {
+    font-size: 10px;
+    width: 15%;
+  }
 }
