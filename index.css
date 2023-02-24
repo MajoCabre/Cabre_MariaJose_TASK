@@ -34,14 +34,13 @@ body {
 }
 #logo {
   background-color: white;
-  bottom: 88px;
+  bottom: 0;
   left: 80%;
-  position: relative;
+  position: absolute;
   width: 100px;
 }
 .contenedorBody {
   display: flex;
-  align-items: flex-start;
 }
 .imagen {
   margin-left: 20px;
@@ -51,12 +50,11 @@ body {
 .contenedorNav {
   display: flex;
   flex-direction: column;
-  margin-left: 10px;
-  width: 20%;
+  justify-content: space-between;
+  margin: 0 0 20px 10px;
 }
 a {
   color: black;
-  margin-bottom: 20px;
   text-decoration: none;
 }
 a:hover {
@@ -83,30 +81,6 @@ a:hover {
   flex-direction: column;
   align-items: center;
 }
-.contenedorNavRules {
-  width: 100%;
-  display: flex;
-  justify-content: space-around;
-  flex-direction: row;
-}
-.contenedorNavRules nav {
-  background-color: black;
-  height: 120vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 11%;
-}
-.contenedorNavRules > nav a {
-  color: white;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 15px;
-  margin-right: 5px;
-}
-.contenedorNavRules > nav .active {
-  color: #5fa199;
-  text-decoration: underline;
-}
 .sectionRules {
   display: flex;
   flex-direction: column;
@@ -119,9 +93,11 @@ a:hover {
 }
 .titleRules {
   margin-bottom: 20px;
+  font-size: 25px;
 }
 .subtitleRules {
   margin-top: 30px;
+  font-size: 20px;
 }
 .parrafoRules {
   margin-top: 20px;
@@ -129,7 +105,7 @@ a:hover {
 }
 p,
 li {
-  font-size: 15px;
+  font-size: 13px;
 }
 .listRules {
   margin-left: 30px;
@@ -146,22 +122,7 @@ li {
   display: flex;
   flex-direction: row;
   align-content: space-between;
-}
-.contenedorNavRulesGames {
-  background-color: black;
-  display: flex;
-  justify-content: space-around;
-  flex-direction: column;
-  width: 10%;
-}
-.contenedorNavRulesGames > a {
-  color: white;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 15px;
-  margin: 5px;
-}
-.contenedorNavRulesGames > .active {
-  color: #5fa199;
+  margin-top: 20px;
 }
 .sectionRules {
   display: flex;
@@ -180,11 +141,9 @@ li {
   font-size: 20px;
   margin-bottom: 50px;
 }
-table {
-  margin-bottom: 50px;
-}
 .infoRules {
   margin-bottom: 15px;
+  font-size: 15px;
 }
 .parrafoContact {
   display: flex;
@@ -197,11 +156,12 @@ table {
   text-align: center;
 }
 form {
-  margin: 25px;
+  margin: 0 15px;
   font-family: Arial, Helvetica, sans-serif;
 }
 .sectionFormPrimera {
-  font-size: 20px;
+  font-size: 16px;
+  margin-right: 20px;
 }
 .inputText {
   background-color: #f3f3f3;
@@ -213,16 +173,16 @@ form {
 }
 #name,
 #lastName {
-  width: 38%;
+  width: 41%;
 }
 #address {
-  width: 88%;
+  width: 91%;
 }
 #city,
 #code,
 #signature,
 #date {
-  width: 44%;
+  width: 45%;
 }
 .contenedorChek {
   display: flex;
@@ -231,34 +191,33 @@ form {
   margin-bottom: 15px;
 }
 .gender {
-  font-size: 20px;
+  font-size: 16px;
   font-family: Arial, Helvetica, sans-serif;
   margin-left: 20px;
   display: flex;
   flex-direction: row;
 }
 .grade {
-  font-size: 20px;
+  font-size: 16px;
   font-family: Arial, Helvetica, sans-serif;
 }
 .parrafoForm {
-  font-size: 20px;
+  font-size: 16px;
   margin-bottom: 16px;
 }
 .school {
   display: flex;
   flex-direction: row;
   margin: 15px;
+  font-size: 15px;
 }
 .school > input {
   margin-right: 15px;
 }
 th,
 td {
-  padding-top: 10px;
-  padding-bottom: 20px;
-  padding-left: 30px;
-  padding-right: 40px;
+  padding: 5px 30px;
+  font-size: 15px;
 }
 .possitionUno,
 possitionDos {
@@ -267,9 +226,11 @@ possitionDos {
   margin: 15px;
 }
 .tituloForm {
-  margin: 20px;
+  margin-bottom: 10px;
+  font-size: 22px;
 }
 .size {
+  font-size: 15px;
   margin: 15px;
 }
 #marjo,
@@ -284,10 +245,10 @@ possitionDos {
   margin-left: 50px;
 }
 #l {
-  margin-left: 30px;
+  margin-left: 35px;
 }
 #north {
-  margin-left: 103px;
+  margin-left: 90px;
 }
 #south {
   margin-left: 37px;
@@ -303,8 +264,9 @@ possitionDos {
 }
 button {
   border: 0;
-  background-color: #5fa199;
+  background-color: #5fa1998a;
   border-radius: 5px;
+  padding: 5px;
 }
 @media (max-width: 424px) {
   .contenedor {
@@ -324,7 +286,7 @@ button {
     margin: 5px;
   }
   #logo {
-    bottom: 42px;
+    /* bottom: 42px; */
     left: 80%;
     width: 50px;
   }
@@ -369,13 +331,6 @@ button {
     padding: 5px;
     margin: 0;
   }
-  .contenedorNavRulesGames > a {
-    font-size: 8px;
-    margin: 2px;
-  }
-  .contenedorNavRulesGames {
-    width: 15%;
-  }
   #pDecoration {
     font-size: 10px;
     margin-bottom: 20px;
@@ -388,13 +343,6 @@ button {
   iframe,
   .iframe {
     display: none;
-  }
-
-  table {
-    margin-bottom: 10px;
-  }
-  form {
-    margin: 5px;
   }
   .sectionFormPrimera {
     font-size: 12px;
@@ -470,12 +418,6 @@ button {
   .contenedor {
     height: 290px;
   }
-  .contenedorNavRulesGames {
-    width: 12%;
-  }
-  form {
-    margin: 5px;
-  }
   .sectionFormPrimera {
     font-size: 15px;
     display: flex;
@@ -539,10 +481,6 @@ button {
   .signature {
     font-size: 15px;
   }
-  .contenedorNavRulesGames > a {
-    font-size: 10px;
-    margin: 0px;
-  }
   .contenedorNavRules > nav a {
     font-size: 9px;
     margin-right: 5px;
@@ -561,5 +499,96 @@ button {
   .contenedorNav {
     font-size: 10px;
     width: 15%;
+  }
+}
+@media (min-width: 1440px) and (max-width: 2560px) {
+  .contenedor {
+    height: 1000px;
+  }
+  #tituloPrincipal {
+    font-size: 70px;
+  }
+  .tituloSecundario {
+    padding: 25px 0;
+    font-size: 50px;
+  }
+  #logo {
+    width: 215px;
+  }
+  a {
+    font-size: 30px;
+  }
+  .sectionFormPrimera {
+    font-size: 35px;
+  }
+  #name,
+  #lastName {
+    width: 38%;
+  }
+  #address {
+    width: 99%;
+  }
+  #city,
+  #code,
+  #signature,
+  #date {
+    width: 44%;
+  }
+  .inputText {
+    font-size: 35px;
+  }
+  .gender {
+    font-size: 35px;
+  }
+  .grade {
+    font-size: 35px;
+  }
+  .tituloForm {
+    font-size: 40px;
+  }
+  .parrafoForm {
+    font-size: 35px;
+  }
+  .school {
+    font-size: 35px;
+  }
+  #north {
+    margin-left: 148px;
+  }
+  .size {
+    font-size: 35px;
+  }
+  #l {
+    margin-left: 18px;
+  }
+  .tituloPermission {
+    font-size: 40px;
+  }
+  p,
+  li {
+    font-size: 25px;
+  }
+  .signature {
+    font-size: 30px;
+  }
+  button {
+    font-size: 30px;
+  }
+  th,
+  td {
+    font-size: 35px;
+  }
+  .infoRules {
+    font-size: 30px;
+  }
+  #pDecoration {
+    font-size: 35px;
+  }
+  .imagen {
+    margin-right: 30px;
+    height: 400px;
+  }
+  .contenedorTexto {
+    font-size: 30px;
   }
 }
